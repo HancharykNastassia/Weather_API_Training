@@ -62,6 +62,7 @@
     <Compile Include="Items\Clouds.cs" />
     <Compile Include="Items\Coordinates.cs" />
     <Compile Include="Items\MainWeatherInfo.cs" />
+    <Compile Include="Items\ResponseContent.cs" />
     <Compile Include="Items\Snow.cs" />
     <Compile Include="Items\Sys.cs" />
     <Compile Include="Items\WeatherItem.cs" />
