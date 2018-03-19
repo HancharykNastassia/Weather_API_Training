@@ -18,7 +18,7 @@ namespace WeatherAPI.Deserialization
     {
     }
 
-    public JsonDeserializator Deserializator => deserializator ?? (deserializator = new JsonDeserializator());
+    public static JsonDeserializator Deserializator => deserializator ?? (deserializator = new JsonDeserializator());
 
     public T Deserialize<T> (IRestResponse response)
     {

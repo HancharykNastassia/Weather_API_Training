@@ -11,7 +11,6 @@ namespace WeatherAPI.Items
   {
     [JsonProperty("list")]
     public List<string> Weather { get; set; }
-
     [JsonProperty("city")]
     public City CityInfo { get; set; }
   }
