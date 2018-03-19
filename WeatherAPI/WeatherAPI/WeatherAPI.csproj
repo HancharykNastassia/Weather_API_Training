@@ -65,6 +65,7 @@
     <Compile Include="Items\ResponseContent.cs" />
     <Compile Include="Items\Snow.cs" />
     <Compile Include="Items\Sys.cs" />
+    <Compile Include="Items\Weather.cs" />
     <Compile Include="Items\WeatherItem.cs" />
     <Compile Include="Items\Wind.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

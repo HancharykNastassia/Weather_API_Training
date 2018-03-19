@@ -13,7 +13,8 @@ namespace WeatherAPI.Items
     public string Dt { get; set; }
     [JsonProperty("main")]
     public MainWeatrherInfo MainInfo { get; set; }
-
+    [JsonProperty("weather")]
+    public Weather[] Weather { get; set; }
     [JsonProperty("clouds")]
     public Clouds Clouds { get; set; }
     [JsonProperty("wind")]
