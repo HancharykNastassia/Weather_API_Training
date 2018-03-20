@@ -2,7 +2,6 @@
 using RestSharp;
 using WeatherAPI.Deserialization;
 using WeatherAPI.Items;
-//using WeatherAPI;
 
 namespace WeatherAPI.Test
 {
@@ -24,7 +23,7 @@ namespace WeatherAPI.Test
     [Test]
     public void TestAPIRequestWithCityId()
     {
-      string cityId = "2959662";
+      string cityId = "524901";
       request.AddParameter("id", cityId);
       request.AddParameter("appid", ConfigurationReader.APP_ID);
       string resource = "/data/2.5/forecast";

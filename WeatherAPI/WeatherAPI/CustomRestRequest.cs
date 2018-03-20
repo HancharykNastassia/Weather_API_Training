@@ -4,7 +4,11 @@ namespace WeatherAPI
 {
   public class CustomRestRequest
   {
-    private RestRequest request => new RestRequest();
+    private RestRequest request;
+    public CustomRestRequest()
+    {
+      request = new RestRequest();
+    }
     
     public CustomRestRequest AddParameter(Parameter param)
     {
