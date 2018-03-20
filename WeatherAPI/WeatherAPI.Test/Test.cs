@@ -12,7 +12,7 @@ namespace WeatherAPI.Test
     private static readonly string BASE_URL = "http://api.openweathermap.org/";
     private static readonly string RESOURCE = "/data/2.5/forecast";
     private static readonly string APP_ID = "2b97d827d6a17a2d7d44fe852cf9b9c9";
-    private static readonly string CITY_ID = "524901";
+    private static readonly string CITY_ID = "2959662";
 
     private RestClient client;
     private RestRequest request;
