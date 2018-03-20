@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using RestSharp;
-using SimpleJson;
 using Newtonsoft.Json;
 using System.IO;
 
@@ -27,11 +23,12 @@ namespace WeatherAPI.Deserialization
         throw new ArgumentNullException(nameof(response));
       }
       var serializator = new JsonSerializer();
-      using (StreamReader stream = new StreamReader(response.Content))
+      using (MemoryStream stream = new MemoryStream(Encoding.UTF8.GetBytes(response.Content)))
       {
-        JsonTextReader reader = new JsonTextReader(stream);
-        object result = serializator.Deserialize(reader);
-        return (T)result;
+        StreamReader firstReader = new StreamReader(stream);
+        JsonTextReader reader = new JsonTextReader(firstReader);
+        var result = serializator.Deserialize<T>(reader);
+        return result;
       }
     }
   }

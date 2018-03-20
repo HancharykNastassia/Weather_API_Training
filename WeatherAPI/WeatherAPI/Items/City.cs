@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using RestSharp;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace WeatherAPI.Items
 {
@@ -18,15 +12,5 @@ namespace WeatherAPI.Items
     public Coordinates Coord { get; set; }
     [JsonProperty("country")]
     public string Country { get; set; }
-
-    public override bool Equals(object obj)
-    {
-      return base.Equals(obj);
-    }
-
-    public override int GetHashCode()
-    {
-      return base.GetHashCode();
-    }
   }
 }
