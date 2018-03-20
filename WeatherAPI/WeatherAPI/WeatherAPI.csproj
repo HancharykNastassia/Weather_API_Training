@@ -44,6 +44,7 @@
       <HintPath>..\packages\RestSharp.106.2.1\lib\net452\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ValueTuple.4.4.0\lib\net461\System.ValueTuple.dll</HintPath>
@@ -57,6 +58,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConfigurationReader.cs" />
+    <Compile Include="CustomRestRequest.cs" />
     <Compile Include="Deserialization\JsonDeserializator.cs" />
     <Compile Include="Items\City.cs" />
     <Compile Include="Items\Clouds.cs" />
@@ -68,9 +71,11 @@
     <Compile Include="Items\Weather.cs" />
     <Compile Include="Items\WeatherItem.cs" />
     <Compile Include="Items\Wind.cs" />
+    <Compile Include="Client.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
