@@ -16,7 +16,7 @@ namespace WeatherAPI.Test
     [SetUp]
     public void IntializeTest()
     {
-      client = new Client();
+      client = new Client(ConfigurationReader.BASE_URL);
       request = new CustomRestRequest();
       deserializator = JsonDeserializator.Deserializator;
     }

@@ -7,10 +7,10 @@ namespace WeatherAPI
   {
     private RestClient client;
 
-    public Client()
+    public Client(string url)
     {
       client = new RestClient();
-      client.BaseUrl = new Uri(ConfigurationReader.BASE_URL);
+      client.BaseUrl = new Uri(url);
     }
 
     public IRestResponse<T> Execute<T>(CustomRestRequest request) where T : new()
