@@ -11,6 +11,7 @@ namespace WeatherAPI.Test
   {
     public static string BASE_URL => GetConfigurationVariable("BaseUrl", "http://api.openweathermap.org/");
     public static string APP_ID => GetConfigurationVariable("AppId", String.Empty);
+    public static string SOURCE => GetConfigurationVariable("Source", String.Empty);
 
     public static string GetConfigurationVariable(string variable, string defaultValue)
     {
